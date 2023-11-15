@@ -3,7 +3,6 @@
 
 aight so the prodject is basically to recode fifa and stuff but bad!1!!!11!!1
 
-
 ## dependenties
 
 - react router dom
@@ -19,6 +18,7 @@ run this rq to start the thing and theres gonna be the link in the output (ez)
 ```
 
 you need node and npm installed (bro if u dont have node and npm installed idk wyd here icl) and vite as well
+
 ## contributing
 
 contribute if u want bruv its calm if u respect these conditions:
@@ -32,13 +32,17 @@ contribute if u want bruv its calm if u respect these conditions:
 
 if uve got thigs to say **comrade9_11** is my dsicrord so dm (and if u dont have discord bro istgggg wtffff)
 
-
 ## known issues
 
 - some pages dont exist but there are 'links' to them so itll throw u the 'this page doesnt exist' error rq but its calm
+
 ## todo
 
-- idk bro but itll soon be full of stuff!11!1!!!1!
+- (MC) add other teams
+- (MC) add option to choose team
+- (MC) the rest of mc
+- fut
+
 ## authors
 
 - [your best mate comrade 🗣️](https://github.com/Yudjenn)
