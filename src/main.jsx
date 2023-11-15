@@ -4,11 +4,12 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SplashScreen from './splashScreen/splashScreen'
 import MainMenu from './mainMenu/mainMenu'
+import McFirstScreen from './managerCareer/firstScreen/mcFirstScreen'
 
 const router = createBrowserRouter([
   {path: '/', element: <SplashScreen />},
   {path: '/menu', element: <MainMenu />},
-  {path: '/managerCareer', element: <ManCar />}
+  {path: '/managerCareer', element: <McFirstScreen />}
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

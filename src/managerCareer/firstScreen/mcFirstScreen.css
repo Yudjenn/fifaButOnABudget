@@ -1,0 +1,72 @@
+:root {
+    --scaleValue: 250%
+}
+
+.mcFirstScreenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../../assets/backgrounds/mcbackground.jpeg);
+    background-size: cover;
+}
+
+.mcFirstScreenPicker {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mcChooseClub {
+    position: absolute;
+    width: 30vw;
+    height: 75vh;
+}
+
+.mcFirstScreenClubName {
+    background: #090633;
+    font-size: 30px;
+    height: 17.5%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mcFirstScreenClubLogo {
+    background: #030218;
+    height: calc(100% - 17.5% * 2);
+}
+
+.mcFirstScreenClubStars {
+    background: #090633;
+    height: 17.5%;
+    gap: 1vw;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.mcfirstscreenstarcounter svg {
+   transform: scale(150%);
+   transition: all .2s;
+}
+
+.arrowsContainer {
+    display: flex;
+    gap: 35vw;
+}
+
+.leftArrow {
+    transform: scale(var(--scaleValue));
+}
+
+.rightArrow {
+    transform: scale(var(--scaleValue)) scaleX(-1);
+}
+
+.arrow {
+    transition: all .7s;
+}
+
+.arrow:hover {
+    --scaleValue: 300%;
+    cursor: pointer;
+}

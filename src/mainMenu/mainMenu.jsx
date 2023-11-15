@@ -14,12 +14,12 @@ export default function MainMenu() {
     return (
         <div className="mainMenuContainer">
             <div className="links">
-                <Link to="FUT"><p onMouseEnter={() => {
+                <Link to="/FUT"><p onMouseEnter={() => {
                     setWidget("UT")
                     setText("create good team frfr")
                     setDesc("sui")
                 }}>Ultimeate Team</p></Link>
-                <Link to="managerCareer"><p onMouseEnter={() => {
+                <Link to="/managerCareer"><p onMouseEnter={() => {
                     setWidget("MC")
                     setText("good tactics or u bad")
                     setDesc("classic incoming or?")

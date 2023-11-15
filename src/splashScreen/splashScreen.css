@@ -9,8 +9,9 @@
 }
 
 .FClogo {
-    animation: logoFirstAnim 10s both;
-    animation: logoFirstAnim 0s both;
+    margin-top: -40vh;
+    transform: scale(50%);
+    animation: fromNoOpToFullOpBis 5s;
 }
 
 @keyframes startAnim {
@@ -22,43 +23,9 @@
     }
 }
 
-@keyframes logoFirstAnim {
-    0% {
-        opacity: 0;
-        margin-top: 5%;
-    }
-    10%, 40% {
-        opacity: 1;
-        margin-top: 0px;
-    }
-    50% {
-        opacity: 0;
-        margin-top: -50%;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        margin-top: -40vh;
-        transform: scale(50%);
-    }
-}
-
-@keyframes logoSecondAnim {
-    0% {
-        opacity: 0;
-        margin-top: 100px;
-    }
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
 .AElogo {
     position: absolute;
-    animation: AEAnimFirst 5s 5s both;
+    animation: AEAnimFirst 5s 0s both;
     opacity: 0;
 }
 
@@ -96,7 +63,7 @@
     font-size: 150%;
     border-radius: 60px;
     aspect-ratio: 3/1;
-    animation: shadowButtonAnim 5s infinite linear both;
+    animation: shadowButtonAnim 5s infinite linear both, fromNoOpToFullOp 5s;
     transition: all .7s;
 }
 
@@ -120,5 +87,27 @@
     }
     75% {
         box-shadow: rgb(0, 255, 0) 10px -10px 20px -10px;
+    }
+}
+
+@keyframes fromNoOpToFullOp {
+    0%, 50%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fromNoOpToFullOpBis {
+    0%, 50%{
+        opacity: 0;
+        transform: scale(50%) translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(50%) translate(0);
     }
 }
