@@ -1,0 +1,60 @@
+.mainMenuContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/src/assets/backgrounds/stadiumBackground.png");
+    background-size: cover;
+}
+
+.links {
+    margin-left: 10vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75vh;
+    font-size: 25px;
+}
+
+.links p {
+    color: rgb(175, 175, 175);
+    transition: all .7s;
+}
+
+.links p:hover {
+    color: white;
+    margin-left: 1%;
+    text-shadow: 1px 1px 60px rgb(0, 255, 0);
+}
+
+.widget {
+    flex-direction: column;
+    text-align: center;
+    left: 50%;
+    top: 25vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+.widgetText {
+    font-size: 30px;
+}
+
+.widgetDesc {
+    color: rgb(175, 175, 175);
+}
+
+.picto {
+    aspect-ratio: 1;
+    width: 7vw;
+    border: solid white 2px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5vh;
+    font-size: calc(7vw / 2);
+    font-style: italic;
+}

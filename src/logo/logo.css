@@ -1,0 +1,36 @@
+:root {
+    --logoWidth: 0px;
+}
+
+.logoBG {
+    background-color: black;
+    width: var(--logoWidth);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    line-height: calc(var(--logoWidth) / 4.5);
+    color: white;
+}
+
+.logoBG p:nth-child(1) {
+    font-size: calc(var(--logoWidth) / 2.5);
+    font-style: italic;
+}
+
+.logoBG p:nth-child(2) {
+    font-size: calc(var(--logoWidth) / 5);
+}
+
+.FCLogoContainer {
+    display: flex;
+    align-items: center;
+    gap: .5%;
+    font-size: calc(var(--logoWidth) / .8);
+}
+
+.fc {
+    font-style: italic;
+}
